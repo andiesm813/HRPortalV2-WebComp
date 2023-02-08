@@ -29,9 +29,6 @@ export default class App extends LitElement {
       min-height: 0;
       flex-grow: 1;
     }
-    .icon-button {
-      margin: 0 8px 0 0;
-    }
     .button {
       height: max-content;
       min-width: min-content;
@@ -75,15 +72,14 @@ export default class App extends LitElement {
           <igc-ripple></igc-ripple>
         </igc-button>
         <div slot="end">
-          <div class="row-layout group">
-            <igc-icon-button variant="flat" class="icon-button">
-              <span class="material-icons">
-                notifications
-              </span>
-              <igc-ripple></igc-ripple>
-            </igc-icon-button>
-            <igc-avatar src="/src/assets/Avatar6.png" size="small" shape="circle" class="avatar"></igc-avatar>
-          </div>
+          <div class="row-layout group"></div>
+          <igc-icon-button variant="flat">
+            <span class="material-icons">
+              notifications
+            </span>
+            <igc-ripple></igc-ripple>
+          </igc-icon-button>
+          <igc-avatar src="/src/assets/Avatar6.png" size="small" shape="circle" class="avatar"></igc-avatar>
         </div>
       </igc-navbar>
       <router-outlet class="view-container"></router-outlet>
